@@ -7,7 +7,6 @@ import {
     signOut,
 } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-
 // ConvoSense-e916b Firebase Configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBw1THg38vpjeDu-T4uhzWJa35ZpMVt5hw",
