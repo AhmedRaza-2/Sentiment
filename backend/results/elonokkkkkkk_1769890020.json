@@ -1,0 +1,286 @@
+{
+    "query": "#elonokkkkkkk",
+    "tweets": [
+        {
+            "id": "6026320091672158",
+            "text": "The #elonokkkkkkk is okay, but could be better.",
+            "created_at": "2026-02-01T01:06:59.525283",
+            "author_id": "185176394",
+            "lang": "en",
+            "clean_text": "elonokkkkkkk okay could better",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9913803935050964
+            },
+            "toxicity": 0.04930472647530948
+        },
+        {
+            "id": "8243127192418816",
+            "text": "Support for #elonokkkkkkk has been great so far.",
+            "created_at": "2026-02-01T01:06:59.525298",
+            "author_id": "810921260",
+            "lang": "en",
+            "clean_text": "support elonokkkkkkk great far",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9980306029319763
+            },
+            "toxicity": 0.012220254788681998
+        },
+        {
+            "id": "8377779220335786",
+            "text": "Anyone else using #elonokkkkkkk? I have some questions.",
+            "created_at": "2026-02-01T01:06:59.525305",
+            "author_id": "195916342",
+            "lang": "en",
+            "clean_text": "anyone else using elonokkkkkkk questions",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9984620809555054
+            },
+            "toxicity": 0.054568618001354256
+        },
+        {
+            "id": "8121885602900977",
+            "text": "Terrible experience with #elonokkkkkkk. Avoid it!",
+            "created_at": "2026-02-01T01:06:59.525309",
+            "author_id": "969779071",
+            "lang": "en",
+            "clean_text": "terrible experience elonokkkkkkk avoid",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9997623562812805
+            },
+            "toxicity": 0.2693331323202088
+        },
+        {
+            "id": "2660589040729527",
+            "text": "Not sure how I feel about the latest #elonokkkkkkk update.",
+            "created_at": "2026-02-01T01:06:59.525314",
+            "author_id": "284150762",
+            "lang": "en",
+            "clean_text": "sure feel latest elonokkkkkkk update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9993970394134521
+            },
+            "toxicity": 0.050462355585693196
+        },
+        {
+            "id": "4616629620355964",
+            "text": "Wow, #elonokkkkkkk is a game changer in the industry.",
+            "created_at": "2026-02-01T01:06:59.525318",
+            "author_id": "267272459",
+            "lang": "en",
+            "clean_text": "wow elonokkkkkkk game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9978830218315125
+            },
+            "toxicity": 0.07044772732442899
+        },
+        {
+            "id": "5445127370595499",
+            "text": "#elonokkkkkkk is definitely trending today.",
+            "created_at": "2026-02-01T01:06:59.525322",
+            "author_id": "872489004",
+            "lang": "en",
+            "clean_text": "elonokkkkkkk definitely trending today",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9979352951049805
+            },
+            "toxicity": 0.08542823090965473
+        },
+        {
+            "id": "2616449749909154",
+            "text": "I love the new #elonokkkkkkk! It's amazing.",
+            "created_at": "2026-02-01T01:06:59.525326",
+            "author_id": "480572093",
+            "lang": "en",
+            "clean_text": "love new elonokkkkkkk amazing",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9998812675476074
+            },
+            "toxicity": 0.0730291070543781
+        },
+        {
+            "id": "2512940854901526",
+            "text": "I love the new #elonokkkkkkk! It's amazing.",
+            "created_at": "2026-02-01T01:06:59.525330",
+            "author_id": "677414841",
+            "lang": "en",
+            "clean_text": "love new elonokkkkkkk amazing",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9998812675476074
+            },
+            "toxicity": 0.09219490022292132
+        },
+        {
+            "id": "1884766432895712",
+            "text": "Not sure how I feel about the latest #elonokkkkkkk update.",
+            "created_at": "2026-02-01T01:06:59.525335",
+            "author_id": "235670634",
+            "lang": "en",
+            "clean_text": "sure feel latest elonokkkkkkk update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9993970394134521
+            },
+            "toxicity": 0.07750537018898103
+        },
+        {
+            "id": "4378610225546216",
+            "text": "Terrible experience with #elonokkkkkkk. Avoid it!",
+            "created_at": "2026-02-01T01:06:59.525339",
+            "author_id": "933866864",
+            "lang": "en",
+            "clean_text": "terrible experience elonokkkkkkk avoid",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9997623562812805
+            },
+            "toxicity": 0.2735155342854214
+        },
+        {
+            "id": "7901005393769438",
+            "text": "Terrible experience with #elonokkkkkkk. Avoid it!",
+            "created_at": "2026-02-01T01:06:59.525343",
+            "author_id": "609929467",
+            "lang": "en",
+            "clean_text": "terrible experience elonokkkkkkk avoid",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9997623562812805
+            },
+            "toxicity": 0.2509055495904813
+        },
+        {
+            "id": "4760782470329502",
+            "text": "I love the new #elonokkkkkkk! It's amazing.",
+            "created_at": "2026-02-01T01:06:59.525347",
+            "author_id": "709441503",
+            "lang": "en",
+            "clean_text": "love new elonokkkkkkk amazing",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9998812675476074
+            },
+            "toxicity": 0.05424594638105394
+        },
+        {
+            "id": "1294377179673995",
+            "text": "Not sure how I feel about the latest #elonokkkkkkk update.",
+            "created_at": "2026-02-01T01:06:59.525352",
+            "author_id": "215313037",
+            "lang": "en",
+            "clean_text": "sure feel latest elonokkkkkkk update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9993970394134521
+            },
+            "toxicity": 0.0978471735854352
+        },
+        {
+            "id": "7855840979548750",
+            "text": "Support for #elonokkkkkkk has been great so far.",
+            "created_at": "2026-02-01T01:06:59.525356",
+            "author_id": "268470271",
+            "lang": "en",
+            "clean_text": "support elonokkkkkkk great far",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9980306029319763
+            },
+            "toxicity": 0.05957778840854313
+        },
+        {
+            "id": "5266052094214480",
+            "text": "Wow, #elonokkkkkkk is a game changer in the industry.",
+            "created_at": "2026-02-01T01:06:59.525360",
+            "author_id": "248099263",
+            "lang": "en",
+            "clean_text": "wow elonokkkkkkk game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9978830218315125
+            },
+            "toxicity": 0.09475268459232898
+        },
+        {
+            "id": "5500527096544596",
+            "text": "Terrible experience with #elonokkkkkkk. Avoid it!",
+            "created_at": "2026-02-01T01:06:59.525365",
+            "author_id": "755762379",
+            "lang": "en",
+            "clean_text": "terrible experience elonokkkkkkk avoid",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9997623562812805
+            },
+            "toxicity": 0.25474013619657165
+        },
+        {
+            "id": "9753097784569843",
+            "text": "Not sure how I feel about the latest #elonokkkkkkk update.",
+            "created_at": "2026-02-01T01:06:59.525369",
+            "author_id": "639387114",
+            "lang": "en",
+            "clean_text": "sure feel latest elonokkkkkkk update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9993970394134521
+            },
+            "toxicity": 0.08612423593519938
+        },
+        {
+            "id": "2347771752116895",
+            "text": "Wow, #elonokkkkkkk is a game changer in the industry.",
+            "created_at": "2026-02-01T01:06:59.525373",
+            "author_id": "527569604",
+            "lang": "en",
+            "clean_text": "wow elonokkkkkkk game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9978830218315125
+            },
+            "toxicity": 0.07195672599369102
+        },
+        {
+            "id": "2427918407198758",
+            "text": "Just saw some news about #elonokkkkkkk. Interesting.",
+            "created_at": "2026-02-01T01:06:59.525376",
+            "author_id": "852424838",
+            "lang": "en",
+            "clean_text": "saw news elonokkkkkkk interesting",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9948487877845764
+            },
+            "toxicity": 0.06484247787567375
+        }
+    ],
+    "topics": [
+        {
+            "id": 0,
+            "words": "0.165*\"elonokkkkkkk\" + 0.086*\"update\" + 0.086*\"sure\" + 0.086*\"latest\" + 0.086*\"feel\" + 0.066*\"changer\" + 0.066*\"industry\" + 0.066*\"game\" + 0.066*\"wow\" + 0.026*\"questions\""
+        },
+        {
+            "id": 1,
+            "words": "0.177*\"elonokkkkkkk\" + 0.077*\"support\" + 0.077*\"far\" + 0.077*\"great\" + 0.044*\"today\" + 0.044*\"better\" + 0.044*\"could\" + 0.044*\"trending\" + 0.044*\"definitely\" + 0.044*\"okay\""
+        },
+        {
+            "id": 2,
+            "words": "0.191*\"elonokkkkkkk\" + 0.113*\"experience\" + 0.113*\"terrible\" + 0.113*\"avoid\" + 0.087*\"love\" + 0.087*\"new\" + 0.087*\"amazing\" + 0.009*\"latest\" + 0.009*\"wow\" + 0.009*\"sure\""
+        }
+    ],
+    "stats": {
+        "total": 20,
+        "positive": 10,
+        "negative": 10,
+        "neutral": 0,
+        "avg_toxicity": 0.11
+    }
+}

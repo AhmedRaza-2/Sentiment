@@ -1,0 +1,286 @@
+{
+    "query": "#elonok",
+    "tweets": [
+        {
+            "id": "1400296916312525",
+            "text": "Anyone else using #elonok? I have some questions.",
+            "created_at": "2026-02-01T01:06:55.120462",
+            "author_id": "574509017",
+            "lang": "en",
+            "clean_text": "anyone else using elonok questions",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9980964064598083
+            },
+            "toxicity": 0.09689727073562238
+        },
+        {
+            "id": "7960344954771159",
+            "text": "#elonok is definitely trending today.",
+            "created_at": "2026-02-01T01:06:55.120476",
+            "author_id": "649455894",
+            "lang": "en",
+            "clean_text": "elonok definitely trending today",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9992450475692749
+            },
+            "toxicity": 0.07637447330661311
+        },
+        {
+            "id": "2835034567826281",
+            "text": "Support for #elonok has been great so far.",
+            "created_at": "2026-02-01T01:06:55.120482",
+            "author_id": "243249599",
+            "lang": "en",
+            "clean_text": "support elonok great far",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9995267391204834
+            },
+            "toxicity": 0.08030377094454708
+        },
+        {
+            "id": "7787738234459132",
+            "text": "I love the new #elonok! It's amazing.",
+            "created_at": "2026-02-01T01:06:55.120486",
+            "author_id": "995028589",
+            "lang": "en",
+            "clean_text": "love new elonok amazing",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9998886585235596
+            },
+            "toxicity": 0.05631971851458805
+        },
+        {
+            "id": "6229299562075529",
+            "text": "Support for #elonok has been great so far.",
+            "created_at": "2026-02-01T01:06:55.120490",
+            "author_id": "163135245",
+            "lang": "en",
+            "clean_text": "support elonok great far",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9995267391204834
+            },
+            "toxicity": 0.08312795101090059
+        },
+        {
+            "id": "8054480732025038",
+            "text": "The community around #elonok is so toxic lately.",
+            "created_at": "2026-02-01T01:06:55.120494",
+            "author_id": "851495862",
+            "lang": "en",
+            "clean_text": "community around elonok toxic lately",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9990713596343994
+            },
+            "toxicity": 0.28864758775331456
+        },
+        {
+            "id": "9245653737544529",
+            "text": "Terrible experience with #elonok. Avoid it!",
+            "created_at": "2026-02-01T01:06:55.120499",
+            "author_id": "725979116",
+            "lang": "en",
+            "clean_text": "terrible experience elonok avoid",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9997565150260925
+            },
+            "toxicity": 0.297310990447498
+        },
+        {
+            "id": "2993958098482584",
+            "text": "The #elonok is okay, but could be better.",
+            "created_at": "2026-02-01T01:06:55.120503",
+            "author_id": "628611141",
+            "lang": "en",
+            "clean_text": "elonok okay could better",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9137511253356934
+            },
+            "toxicity": 0.03482748005102756
+        },
+        {
+            "id": "5799111252772635",
+            "text": "Wow, #elonok is a game changer in the industry.",
+            "created_at": "2026-02-01T01:06:55.120507",
+            "author_id": "233631622",
+            "lang": "en",
+            "clean_text": "wow elonok game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9988744854927063
+            },
+            "toxicity": 0.0714173236939474
+        },
+        {
+            "id": "4404091128622191",
+            "text": "Not sure how I feel about the latest #elonok update.",
+            "created_at": "2026-02-01T01:06:55.120512",
+            "author_id": "876438107",
+            "lang": "en",
+            "clean_text": "sure feel latest elonok update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9993904829025269
+            },
+            "toxicity": 0.06962382675316121
+        },
+        {
+            "id": "9664884863924645",
+            "text": "Just saw some news about #elonok. Interesting.",
+            "created_at": "2026-02-01T01:06:55.120516",
+            "author_id": "969061857",
+            "lang": "en",
+            "clean_text": "saw news elonok interesting",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9995126724243164
+            },
+            "toxicity": 0.0756846519194683
+        },
+        {
+            "id": "1162169589459093",
+            "text": "Support for #elonok has been great so far.",
+            "created_at": "2026-02-01T01:06:55.120520",
+            "author_id": "141334085",
+            "lang": "en",
+            "clean_text": "support elonok great far",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9995267391204834
+            },
+            "toxicity": 0.06895946579630305
+        },
+        {
+            "id": "9731776243776522",
+            "text": "Wow, #elonok is a game changer in the industry.",
+            "created_at": "2026-02-01T01:06:55.120524",
+            "author_id": "230921509",
+            "lang": "en",
+            "clean_text": "wow elonok game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9988744854927063
+            },
+            "toxicity": 0.056097924507849686
+        },
+        {
+            "id": "8869690511043685",
+            "text": "The community around #elonok is so toxic lately.",
+            "created_at": "2026-02-01T01:06:55.120528",
+            "author_id": "567488993",
+            "lang": "en",
+            "clean_text": "community around elonok toxic lately",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9990713596343994
+            },
+            "toxicity": 0.2994150017827694
+        },
+        {
+            "id": "6392206414160916",
+            "text": "#elonok is definitely trending today.",
+            "created_at": "2026-02-01T01:06:55.120532",
+            "author_id": "235462100",
+            "lang": "en",
+            "clean_text": "elonok definitely trending today",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9992450475692749
+            },
+            "toxicity": 0.018514421797799913
+        },
+        {
+            "id": "5794814829758802",
+            "text": "Terrible experience with #elonok. Avoid it!",
+            "created_at": "2026-02-01T01:06:55.120536",
+            "author_id": "144094238",
+            "lang": "en",
+            "clean_text": "terrible experience elonok avoid",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9997565150260925
+            },
+            "toxicity": 0.288809033357751
+        },
+        {
+            "id": "4620160891680709",
+            "text": "Anyone else using #elonok? I have some questions.",
+            "created_at": "2026-02-01T01:06:55.120539",
+            "author_id": "220509781",
+            "lang": "en",
+            "clean_text": "anyone else using elonok questions",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9980964064598083
+            },
+            "toxicity": 0.03026882987886923
+        },
+        {
+            "id": "3462527724469555",
+            "text": "Just saw some news about #elonok. Interesting.",
+            "created_at": "2026-02-01T01:06:55.120543",
+            "author_id": "969341279",
+            "lang": "en",
+            "clean_text": "saw news elonok interesting",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9995126724243164
+            },
+            "toxicity": 0.06483605754685541
+        },
+        {
+            "id": "1801079117994937",
+            "text": "#elonok is definitely trending today.",
+            "created_at": "2026-02-01T01:06:55.120547",
+            "author_id": "633269445",
+            "lang": "en",
+            "clean_text": "elonok definitely trending today",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9992450475692749
+            },
+            "toxicity": 0.03149144606595828
+        },
+        {
+            "id": "3703902602044296",
+            "text": "#elonok is definitely trending today.",
+            "created_at": "2026-02-01T01:06:55.120550",
+            "author_id": "415271018",
+            "lang": "en",
+            "clean_text": "elonok definitely trending today",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9992450475692749
+            },
+            "toxicity": 0.07024508980832686
+        }
+    ],
+    "topics": [
+        {
+            "id": 0,
+            "words": "0.150*\"elonok\" + 0.065*\"changer\" + 0.065*\"game\" + 0.065*\"anyone\" + 0.065*\"wow\" + 0.065*\"questions\" + 0.065*\"using\" + 0.065*\"industry\" + 0.065*\"else\" + 0.037*\"better\""
+        },
+        {
+            "id": 1,
+            "words": "0.119*\"elonok\" + 0.118*\"terrible\" + 0.118*\"experience\" + 0.118*\"avoid\" + 0.017*\"today\" + 0.017*\"latest\" + 0.017*\"definitely\" + 0.017*\"trending\" + 0.017*\"update\" + 0.017*\"far\""
+        },
+        {
+            "id": 2,
+            "words": "0.200*\"elonok\" + 0.065*\"trending\" + 0.065*\"definitely\" + 0.065*\"today\" + 0.050*\"great\" + 0.050*\"support\" + 0.050*\"far\" + 0.035*\"toxic\" + 0.035*\"around\" + 0.035*\"community\""
+        }
+    ],
+    "stats": {
+        "total": 20,
+        "positive": 12,
+        "negative": 8,
+        "neutral": 0,
+        "avg_toxicity": 0.11
+    }
+}

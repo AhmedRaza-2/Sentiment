@@ -1,0 +1,286 @@
+{
+    "query": "#elon",
+    "tweets": [
+        {
+            "id": "9208379271417658",
+            "text": "Not sure how I feel about the latest #elon update.",
+            "created_at": "2026-02-01T01:01:04.668672",
+            "author_id": "204323413",
+            "lang": "en",
+            "clean_text": "sure feel latest elon update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.999413013458252
+            },
+            "toxicity": 0.08888446012477345
+        },
+        {
+            "id": "1661722335257962",
+            "text": "Just saw some news about #elon. Interesting.",
+            "created_at": "2026-02-01T01:01:04.668698",
+            "author_id": "847223543",
+            "lang": "en",
+            "clean_text": "saw news elon interesting",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9995694756507874
+            },
+            "toxicity": 0.013682319872402697
+        },
+        {
+            "id": "7734974696634116",
+            "text": "The community around #elon is so toxic lately.",
+            "created_at": "2026-02-01T01:01:04.668710",
+            "author_id": "882396415",
+            "lang": "en",
+            "clean_text": "community around elon toxic lately",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9989023208618164
+            },
+            "toxicity": 0.26869975554212505
+        },
+        {
+            "id": "4194486844232544",
+            "text": "Anyone else using #elon? I have some questions.",
+            "created_at": "2026-02-01T01:01:04.668718",
+            "author_id": "259699919",
+            "lang": "en",
+            "clean_text": "anyone else using elon questions",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9981427192687988
+            },
+            "toxicity": 0.05006385610134033
+        },
+        {
+            "id": "8392724606044655",
+            "text": "Not sure how I feel about the latest #elon update.",
+            "created_at": "2026-02-01T01:01:04.668726",
+            "author_id": "985500992",
+            "lang": "en",
+            "clean_text": "sure feel latest elon update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.999413013458252
+            },
+            "toxicity": 0.010726270344641763
+        },
+        {
+            "id": "2469618924952430",
+            "text": "Anyone else using #elon? I have some questions.",
+            "created_at": "2026-02-01T01:01:04.668733",
+            "author_id": "794760183",
+            "lang": "en",
+            "clean_text": "anyone else using elon questions",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9981427192687988
+            },
+            "toxicity": 0.0845249949824884
+        },
+        {
+            "id": "9253854767900905",
+            "text": "Just saw some news about #elon. Interesting.",
+            "created_at": "2026-02-01T01:01:04.668741",
+            "author_id": "937175598",
+            "lang": "en",
+            "clean_text": "saw news elon interesting",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9995694756507874
+            },
+            "toxicity": 0.07835275220039116
+        },
+        {
+            "id": "7247783347615795",
+            "text": "Support for #elon has been great so far.",
+            "created_at": "2026-02-01T01:01:04.668747",
+            "author_id": "714133608",
+            "lang": "en",
+            "clean_text": "support elon great far",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9995825886726379
+            },
+            "toxicity": 0.09807551406768318
+        },
+        {
+            "id": "4313044032116941",
+            "text": "#elon is definitely trending today.",
+            "created_at": "2026-02-01T01:01:04.668755",
+            "author_id": "904458673",
+            "lang": "en",
+            "clean_text": "elon definitely trending today",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9994745850563049
+            },
+            "toxicity": 0.04756127694120407
+        },
+        {
+            "id": "4809886284194006",
+            "text": "I love the new #elon! It's amazing.",
+            "created_at": "2026-02-01T01:01:04.668761",
+            "author_id": "348761298",
+            "lang": "en",
+            "clean_text": "love new elon amazing",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9998866319656372
+            },
+            "toxicity": 0.0924575878110996
+        },
+        {
+            "id": "1120984025246520",
+            "text": "Terrible experience with #elon. Avoid it!",
+            "created_at": "2026-02-01T01:01:04.668767",
+            "author_id": "813167767",
+            "lang": "en",
+            "clean_text": "terrible experience elon avoid",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9997554421424866
+            },
+            "toxicity": 0.2595100383972093
+        },
+        {
+            "id": "1216381282760571",
+            "text": "The community around #elon is so toxic lately.",
+            "created_at": "2026-02-01T01:01:04.668773",
+            "author_id": "384322195",
+            "lang": "en",
+            "clean_text": "community around elon toxic lately",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9989023208618164
+            },
+            "toxicity": 0.26337307151462724
+        },
+        {
+            "id": "5868115435964188",
+            "text": "Wow, #elon is a game changer in the industry.",
+            "created_at": "2026-02-01T01:01:04.668779",
+            "author_id": "569462733",
+            "lang": "en",
+            "clean_text": "wow elon game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9990590214729309
+            },
+            "toxicity": 0.09352558257082458
+        },
+        {
+            "id": "3430796497391435",
+            "text": "The #elon is okay, but could be better.",
+            "created_at": "2026-02-01T01:01:04.668786",
+            "author_id": "651488510",
+            "lang": "en",
+            "clean_text": "elon okay could better",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.7979607582092285
+            },
+            "toxicity": 0.05352700058821281
+        },
+        {
+            "id": "9120497750876975",
+            "text": "Not sure how I feel about the latest #elon update.",
+            "created_at": "2026-02-01T01:01:04.668792",
+            "author_id": "133445055",
+            "lang": "en",
+            "clean_text": "sure feel latest elon update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.999413013458252
+            },
+            "toxicity": 0.01655193797766778
+        },
+        {
+            "id": "8474170596803280",
+            "text": "Wow, #elon is a game changer in the industry.",
+            "created_at": "2026-02-01T01:01:04.668798",
+            "author_id": "779228041",
+            "lang": "en",
+            "clean_text": "wow elon game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9990590214729309
+            },
+            "toxicity": 0.01934802283158958
+        },
+        {
+            "id": "6686063036793045",
+            "text": "The #elon is okay, but could be better.",
+            "created_at": "2026-02-01T01:01:04.668804",
+            "author_id": "999706123",
+            "lang": "en",
+            "clean_text": "elon okay could better",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.7979607582092285
+            },
+            "toxicity": 0.08486651911363685
+        },
+        {
+            "id": "9256242965105084",
+            "text": "Anyone else using #elon? I have some questions.",
+            "created_at": "2026-02-01T01:01:04.668811",
+            "author_id": "115717018",
+            "lang": "en",
+            "clean_text": "anyone else using elon questions",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9981427192687988
+            },
+            "toxicity": 0.09299758070510582
+        },
+        {
+            "id": "3524309824518839",
+            "text": "#elon is definitely trending today.",
+            "created_at": "2026-02-01T01:01:04.668818",
+            "author_id": "284455692",
+            "lang": "en",
+            "clean_text": "elon definitely trending today",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9994745850563049
+            },
+            "toxicity": 0.09474173392415794
+        },
+        {
+            "id": "8339784446593981",
+            "text": "Not sure how I feel about the latest #elon update.",
+            "created_at": "2026-02-01T01:01:04.668824",
+            "author_id": "390882661",
+            "lang": "en",
+            "clean_text": "sure feel latest elon update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.999413013458252
+            },
+            "toxicity": 0.023919183149779415
+        }
+    ],
+    "topics": [
+        {
+            "id": 0,
+            "words": "0.178*\"elon\" + 0.065*\"saw\" + 0.065*\"today\" + 0.065*\"news\" + 0.065*\"trending\" + 0.065*\"interesting\" + 0.065*\"definitely\" + 0.037*\"amazing\" + 0.037*\"love\" + 0.037*\"new\""
+        },
+        {
+            "id": 1,
+            "words": "0.160*\"elon\" + 0.109*\"sure\" + 0.109*\"feel\" + 0.109*\"update\" + 0.109*\"latest\" + 0.059*\"better\" + 0.059*\"could\" + 0.059*\"okay\" + 0.008*\"support\" + 0.008*\"far\""
+        },
+        {
+            "id": 2,
+            "words": "0.164*\"elon\" + 0.066*\"using\" + 0.066*\"questions\" + 0.066*\"else\" + 0.066*\"anyone\" + 0.046*\"toxic\" + 0.046*\"game\" + 0.046*\"industry\" + 0.046*\"wow\" + 0.046*\"lately\""
+        }
+    ],
+    "stats": {
+        "total": 20,
+        "positive": 10,
+        "negative": 10,
+        "neutral": 0,
+        "avg_toxicity": 0.09
+    }
+}

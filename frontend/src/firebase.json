@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "convosense-e916b",
+  "private_key_id": "2bf0c1987aec1b4c3948ad094636d02512f3905b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzQ15jsNFO/O/n\nUDZMuQ/vtFdNhha+SkpBg/XBFatuXgLAB11M/paViZatdcZAI9nQN76aRngYPNmL\nFprUUXaYCjVK9N2m7g0MfbKiyEFU+jgt2SYqXM9yAMgQqPHkvk0slCEl+J4S0D+W\npSslnqMAkP+gJNMZu1yihAckl5aKLXxcixIWZbNSegjRYSLMto7nLS19is0YwxTT\nFDTliGUHi/wsoAW16G2oGMQ9zXM4aLY7M/Zxi2VJdSoFtD928KId+fab3JtBJcwg\n/rOmdDjk+0q503n7tkAIKqFRYl0XC4JWZyl5jqVs33nR75TW9W65ljHJ2gxm8xoH\nC4gzlww7AgMBAAECggEAKWk5L1dj6tbUhr+JY6zmqQ2kk1SUAW6A++SDi5C5cvwF\nr52j6Irxd2b652RLIXsGsKqH/fSkfpjj+lUE/GI7PsEw8XlikNLyMb4B28feC8bn\n3nOI9QVOqLvUe8DDbH+nrVIk3DQ0NA1meyL5ti2Q4ysb2j9Xgty8+A/+5G2eSZn3\ndC9q9PJJ4fp/02mlqYu9U0tZ5cJ0GBqhaLR+UFdGO8p4qyv/l3/CkpbHw8yRMwas\n4h2WRWcWt71koCr5Hl4fF/atAQRLFT3wB/myrOJIaBZg3AGvFz4oUiiyZ/Jxr9GJ\nqpyVxeStm9+ZoPjujkPP6DPz4xViia2rToiTVqyxeQKBgQD10qF3//hU66c3roMr\nQNEBeyYYG3QOVx+D4OdEeqaoDds1BfhJmkNnQCsjC6p5me4rNAuJBx1l3bjZh6J7\nESyU/+QuclAD6bWHRsWkl4mCuy90WVCNVuL+jSlFCBrK16LiXQd2IETO2D8g411C\nk9H2HY/BLkj52vLOzeC1iJjZYwKBgQC6r00nVY3p7v85b1cfIveN/w95zmeTGGfg\nMdl9qiNuEy+8Ba3VqqZm5MOyYgbjeX/7IeaRMjvO/sT9wPHHNzOjGBYNkE+jt/lZ\nUp9ZiMzyM8sYI78pmn9xdsto8MUSFjsA6cmdV3ALg70gjgJlfCR1GbtpSzM7TCf7\nAGvZp99lSQKBgHTz/TZmZfOhGjF3qZhOgiG+QWV+yjx4XtoTinQeFmQmE4CqknIS\nHrdk5CEMT9MC1TlgzYwoAmiQkH2N9lOu3BMXm6wtXrw92Mu/dBDWt+mmvPER/S0B\nhYWuC1B4hqay6R/hOseMmq/+Wip/gcNHKMF7VwWFy9pzvMl/UcWMc4wZAoGAT4f/\nRpKcMt0uvjlA1HMBI+1Vmn7kgTYUit6x2WdyUKK7405IEI7y9ULgXE6GwMIyU7rN\nj23nLPg81B4u4sARr5nDS2P/ibAG+pbIbExrg4OtMkuIVSEMyjnhzoNEccAmwuzW\nh8GIal9lY0kcnD+XCIw9202+NbTsE3LKf5+U/IECgYEAwiEK0R35FKczkey63a45\nn0jTiNHqCm/nREQpb/eAE/SW0NR3YucJ2uoqNjjPH3vLhDPJfLu3/wiJOLgVyeMZ\nnyKV8UryGBoE0p9FctmMOZtiuaNb6aE1A8wkkA7ciWrls7ES3lwSFQVVE8vNdL0x\naI89JzBC3KtI9CaVzdsItuQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@convosense-e916b.iam.gserviceaccount.com",
+  "client_id": "110321345300352887213",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40convosense-e916b.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,286 @@
+{
+    "query": "#uuikjkjhkjhkhkjhkkkk",
+    "tweets": [
+        {
+            "id": "3676408875007537",
+            "text": "Just saw some news about #uuikjkjhkjhkhkjhkkkk. Interesting.",
+            "created_at": "2026-02-01T01:07:13.129648",
+            "author_id": "426718227",
+            "lang": "en",
+            "clean_text": "saw news uuikjkjhkjhkhkjhkkkk interesting",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9967605471611023
+            },
+            "toxicity": 0.03471669615821687
+        },
+        {
+            "id": "6720140419343335",
+            "text": "Wow, #uuikjkjhkjhkhkjhkkkk is a game changer in the industry.",
+            "created_at": "2026-02-01T01:07:13.129661",
+            "author_id": "433218563",
+            "lang": "en",
+            "clean_text": "wow uuikjkjhkjhkhkjhkkkk game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.997462272644043
+            },
+            "toxicity": 0.06788877458217157
+        },
+        {
+            "id": "5836966364117311",
+            "text": "Wow, #uuikjkjhkjhkhkjhkkkk is a game changer in the industry.",
+            "created_at": "2026-02-01T01:07:13.129666",
+            "author_id": "621467047",
+            "lang": "en",
+            "clean_text": "wow uuikjkjhkjhkhkjhkkkk game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.997462272644043
+            },
+            "toxicity": 0.0797872045742226
+        },
+        {
+            "id": "8427099816860569",
+            "text": "Not sure how I feel about the latest #uuikjkjhkjhkhkjhkkkk update.",
+            "created_at": "2026-02-01T01:07:13.129671",
+            "author_id": "740408007",
+            "lang": "en",
+            "clean_text": "sure feel latest uuikjkjhkjhkhkjhkkkk update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9993359446525574
+            },
+            "toxicity": 0.05411706936345283
+        },
+        {
+            "id": "6775268840680979",
+            "text": "Wow, #uuikjkjhkjhkhkjhkkkk is a game changer in the industry.",
+            "created_at": "2026-02-01T01:07:13.129676",
+            "author_id": "436707362",
+            "lang": "en",
+            "clean_text": "wow uuikjkjhkjhkhkjhkkkk game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.997462272644043
+            },
+            "toxicity": 0.033215808170298365
+        },
+        {
+            "id": "2755515680610596",
+            "text": "The #uuikjkjhkjhkhkjhkkkk is okay, but could be better.",
+            "created_at": "2026-02-01T01:07:13.129775",
+            "author_id": "435270437",
+            "lang": "en",
+            "clean_text": "uuikjkjhkjhkhkjhkkkk okay could better",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9927923679351807
+            },
+            "toxicity": 0.08361262692624703
+        },
+        {
+            "id": "3621386923245252",
+            "text": "Terrible experience with #uuikjkjhkjhkhkjhkkkk. Avoid it!",
+            "created_at": "2026-02-01T01:07:13.129783",
+            "author_id": "618955450",
+            "lang": "en",
+            "clean_text": "terrible experience uuikjkjhkjhkhkjhkkkk avoid",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9997758269309998
+            },
+            "toxicity": 0.29063231880172763
+        },
+        {
+            "id": "5815790695356465",
+            "text": "I love the new #uuikjkjhkjhkhkjhkkkk! It's amazing.",
+            "created_at": "2026-02-01T01:07:13.129788",
+            "author_id": "322086278",
+            "lang": "en",
+            "clean_text": "love new uuikjkjhkjhkhkjhkkkk amazing",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9998478889465332
+            },
+            "toxicity": 0.04436026226411348
+        },
+        {
+            "id": "3832328450424648",
+            "text": "Just saw some news about #uuikjkjhkjhkhkjhkkkk. Interesting.",
+            "created_at": "2026-02-01T01:07:13.129792",
+            "author_id": "999621493",
+            "lang": "en",
+            "clean_text": "saw news uuikjkjhkjhkhkjhkkkk interesting",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9967605471611023
+            },
+            "toxicity": 0.02946914163655797
+        },
+        {
+            "id": "3230058075808439",
+            "text": "The #uuikjkjhkjhkhkjhkkkk is okay, but could be better.",
+            "created_at": "2026-02-01T01:07:13.129796",
+            "author_id": "899424231",
+            "lang": "en",
+            "clean_text": "uuikjkjhkjhkhkjhkkkk okay could better",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9927923679351807
+            },
+            "toxicity": 0.02333667140737882
+        },
+        {
+            "id": "8250836982054979",
+            "text": "Not sure how I feel about the latest #uuikjkjhkjhkhkjhkkkk update.",
+            "created_at": "2026-02-01T01:07:13.129801",
+            "author_id": "617193909",
+            "lang": "en",
+            "clean_text": "sure feel latest uuikjkjhkjhkhkjhkkkk update",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9993359446525574
+            },
+            "toxicity": 0.05843602714630086
+        },
+        {
+            "id": "1526042530804304",
+            "text": "I love the new #uuikjkjhkjhkhkjhkkkk! It's amazing.",
+            "created_at": "2026-02-01T01:07:13.129805",
+            "author_id": "940380040",
+            "lang": "en",
+            "clean_text": "love new uuikjkjhkjhkhkjhkkkk amazing",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9998478889465332
+            },
+            "toxicity": 0.05740437884401983
+        },
+        {
+            "id": "5325656789422399",
+            "text": "Support for #uuikjkjhkjhkhkjhkkkk has been great so far.",
+            "created_at": "2026-02-01T01:07:13.129809",
+            "author_id": "813498531",
+            "lang": "en",
+            "clean_text": "support uuikjkjhkjhkhkjhkkkk great far",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9962419271469116
+            },
+            "toxicity": 0.0763578269963434
+        },
+        {
+            "id": "4431795219114415",
+            "text": "Wow, #uuikjkjhkjhkhkjhkkkk is a game changer in the industry.",
+            "created_at": "2026-02-01T01:07:13.129813",
+            "author_id": "142674027",
+            "lang": "en",
+            "clean_text": "wow uuikjkjhkjhkhkjhkkkk game changer industry",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.997462272644043
+            },
+            "toxicity": 0.07536633539104323
+        },
+        {
+            "id": "9496560993730411",
+            "text": "#uuikjkjhkjhkhkjhkkkk is definitely trending today.",
+            "created_at": "2026-02-01T01:07:13.129817",
+            "author_id": "360285274",
+            "lang": "en",
+            "clean_text": "uuikjkjhkjhkhkjhkkkk definitely trending today",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9960232973098755
+            },
+            "toxicity": 0.020244156571018766
+        },
+        {
+            "id": "8059801916665044",
+            "text": "Just saw some news about #uuikjkjhkjhkhkjhkkkk. Interesting.",
+            "created_at": "2026-02-01T01:07:13.129821",
+            "author_id": "847311598",
+            "lang": "en",
+            "clean_text": "saw news uuikjkjhkjhkhkjhkkkk interesting",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9967605471611023
+            },
+            "toxicity": 0.069014712501514
+        },
+        {
+            "id": "2156606234262023",
+            "text": "#uuikjkjhkjhkhkjhkkkk is definitely trending today.",
+            "created_at": "2026-02-01T01:07:13.129824",
+            "author_id": "636685059",
+            "lang": "en",
+            "clean_text": "uuikjkjhkjhkhkjhkkkk definitely trending today",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9960232973098755
+            },
+            "toxicity": 0.018709361606782878
+        },
+        {
+            "id": "1447089686778306",
+            "text": "Terrible experience with #uuikjkjhkjhkhkjhkkkk. Avoid it!",
+            "created_at": "2026-02-01T01:07:13.129828",
+            "author_id": "704772886",
+            "lang": "en",
+            "clean_text": "terrible experience uuikjkjhkjhkhkjhkkkk avoid",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9997758269309998
+            },
+            "toxicity": 0.24811478066278242
+        },
+        {
+            "id": "9682332533713157",
+            "text": "Terrible experience with #uuikjkjhkjhkhkjhkkkk. Avoid it!",
+            "created_at": "2026-02-01T01:07:13.129832",
+            "author_id": "301092276",
+            "lang": "en",
+            "clean_text": "terrible experience uuikjkjhkjhkhkjhkkkk avoid",
+            "sentiment": {
+                "label": "NEGATIVE",
+                "score": 0.9997758269309998
+            },
+            "toxicity": 0.21646754512388822
+        },
+        {
+            "id": "3614924636649334",
+            "text": "Just saw some news about #uuikjkjhkjhkhkjhkkkk. Interesting.",
+            "created_at": "2026-02-01T01:07:13.129836",
+            "author_id": "541980582",
+            "lang": "en",
+            "clean_text": "saw news uuikjkjhkjhkhkjhkkkk interesting",
+            "sentiment": {
+                "label": "POSITIVE",
+                "score": 0.9967605471611023
+            },
+            "toxicity": 0.09387824663538119
+        }
+    ],
+    "topics": [
+        {
+            "id": 0,
+            "words": "0.192*\"uuikjkjhkjhkhkjhkkkk\" + 0.071*\"definitely\" + 0.071*\"trending\" + 0.071*\"amazing\" + 0.071*\"today\" + 0.071*\"love\" + 0.071*\"new\" + 0.070*\"better\" + 0.070*\"okay\" + 0.070*\"could\""
+        },
+        {
+            "id": 1,
+            "words": "0.181*\"uuikjkjhkjhkhkjhkkkk\" + 0.095*\"experience\" + 0.095*\"avoid\" + 0.095*\"terrible\" + 0.067*\"sure\" + 0.067*\"update\" + 0.066*\"latest\" + 0.066*\"feel\" + 0.038*\"support\" + 0.038*\"great\""
+        },
+        {
+            "id": 2,
+            "words": "0.185*\"uuikjkjhkjhkhkjhkkkk\" + 0.096*\"changer\" + 0.096*\"industry\" + 0.096*\"game\" + 0.096*\"interesting\" + 0.096*\"wow\" + 0.096*\"news\" + 0.096*\"saw\" + 0.008*\"could\" + 0.008*\"okay\""
+        }
+    ],
+    "stats": {
+        "total": 20,
+        "positive": 13,
+        "negative": 7,
+        "neutral": 0,
+        "avg_toxicity": 0.08
+    }
+}

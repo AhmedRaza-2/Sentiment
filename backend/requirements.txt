@@ -1,0 +1,10 @@
+flask
+flask-cors
+flask-socketio
+tweepy
+nltk
+gensim
+transformers
+torch
+requests
+python-dotenv
