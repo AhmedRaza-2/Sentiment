@@ -1,30 +1,545 @@
-.btn-github {
-  width: 100%;
-  padding: 14px;
-  background: #24292e;
-  color: white;
-  border: 2px solid #24292e;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  font-family: inherit;
-  margin-top: 12px;
-}
+/* ===================================
+   LUXURY AUTH DESIGN
+   =================================== */
 
-.btn-github:hover:not(:disabled) {
-  background: #1b1f23;
-  border-color: #1b1f23;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.btn-github:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
+   :root {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --primary-light: #818cf8;
+    --secondary: #8b5cf6;
+    --accent: #ec4899;
+    
+    --bg-primary: #0f0f1a;
+    --bg-secondary: #1a1a2e;
+    --bg-card: #16213e;
+    
+    --text-primary: #ffffff;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    
+    --success: #10b981;
+    --error: #ef4444;
+    
+    --shadow-glow: 0 0 60px rgba(99, 102, 241, 0.4);
+    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* ===================================
+     AUTH CONTAINER
+     =================================== */
+  
+  .auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+      linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Animated Background Grid */
+  .auth-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        transparent 1px,
+        transparent 80px,
+        rgba(255, 255, 255, 0.03) 81px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        transparent 1px,
+        transparent 80px,
+        rgba(255, 255, 255, 0.03) 81px
+      );
+    pointer-events: none;
+    animation: gridMove 20s linear infinite;
+  }
+  
+  @keyframes gridMove {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(80px, 80px); }
+  }
+  
+  /* Floating Orbs */
+  .auth-container::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    top: -200px;
+    right: -200px;
+    animation: float 15s ease-in-out infinite;
+    pointer-events: none;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-50px, 50px) scale(1.1); }
+  }
+  
+  /* ===================================
+     AUTH CARD
+     =================================== */
+  
+  .auth-card {
+    background: rgba(22, 33, 62, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 48px;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    z-index: 10;
+    animation: slideUpFade 0.6s ease-out;
+  }
+  
+  @keyframes slideUpFade {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Glowing Border Effect */
+  .auth-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+    border-radius: 24px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .auth-card:hover::before {
+    opacity: 0.3;
+    animation: glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes glow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+  }
+  
+  /* ===================================
+     AUTH HEADER
+     =================================== */
+  
+  .auth-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .auth-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+  }
+  
+  .tagline {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .auth-card > h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  /* ===================================
+     FORM ELEMENTS
+     =================================== */
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 14px 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .form-group input:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+  }
+  
+  .form-group input::placeholder {
+    color: var(--text-muted);
+  }
+  
+  .form-group input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* ===================================
+     BUTTONS
+     =================================== */
+  
+  .btn-primary {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+  
+  .btn-primary:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.6);
+  }
+  
+  .btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* ===================================
+     SOCIAL BUTTONS
+     =================================== */
+  
+  .btn-google,
+  .btn-github {
+    width: 100%;
+    padding: 14px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .btn-google:hover:not(:disabled),
+  .btn-github:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-google:disabled,
+  .btn-github:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .btn-google svg,
+  .btn-github svg {
+    flex-shrink: 0;
+  }
+  
+  /* ===================================
+     DIVIDER
+     =================================== */
+  
+  .divider {
+    position: relative;
+    text-align: center;
+    margin: 32px 0;
+  }
+  
+  .divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      transparent 100%
+    );
+  }
+  
+  .divider span {
+    position: relative;
+    background: var(--bg-card);
+    padding: 0 16px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* ===================================
+     ERROR MESSAGE
+     =================================== */
+  
+  .error-message {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid var(--error);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    color: #fecaca;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: shake 0.5s ease;
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    75% { transform: translateX(8px); }
+  }
+  
+  .error-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  
+  /* ===================================
+     SPINNER
+     =================================== */
+  
+  .spinner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* ===================================
+     AUTH FOOTER
+     =================================== */
+  
+  .auth-footer {
+    margin-top: 32px;
+    text-align: center;
+  }
+  
+  .auth-switch {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  
+  .auth-switch a {
+    color: var(--primary-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .auth-switch a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.3s ease;
+  }
+  
+  .auth-switch a:hover {
+    color: var(--primary);
+  }
+  
+  .auth-switch a:hover::after {
+    width: 100%;
+  }
+  
+  /* ===================================
+     RESPONSIVE DESIGN
+     =================================== */
+  
+  @media (max-width: 576px) {
+    .auth-card {
+      padding: 32px 24px;
+      border-radius: 20px;
+    }
+  
+    .auth-header h1 {
+      font-size: 2rem;
+    }
+  
+    .auth-card > h2 {
+      font-size: 1.5rem;
+    }
+  
+    .btn-primary,
+    .btn-google,
+    .btn-github {
+      padding: 14px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* ===================================
+     ANIMATIONS FOR PREMIUM FEEL
+     =================================== */
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+  
+  .auth-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .auth-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.05),
+      transparent
+    );
+    transform: translateX(-100%);
+    animation: shimmer 3s infinite;
+    pointer-events: none;
+  }
+  
+  /* ===================================
+     ACCESSIBILITY
+     =================================== */
+  
+  .btn-primary:focus-visible,
+  .btn-google:focus-visible,
+  .btn-github:focus-visible,
+  .form-group input:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+  
+  /* ===================================
+     LOADING STATE
+     =================================== */
+  
+  .btn-primary:disabled,
+  .btn-google:disabled,
+  .btn-github:disabled {
+    position: relative;
+  }
+  
+  .btn-primary:disabled::before,
+  .btn-google:disabled::before,
+  .btn-github:disabled::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: inherit;
+  }
