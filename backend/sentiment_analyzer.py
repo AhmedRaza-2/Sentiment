@@ -26,9 +26,16 @@ class SentimentAnalyzer:
         
         try:
             result = self.analyzer(text[:512])[0]
+            sentiment = result['label']
+            confidence = round(result['score'], 4)
+            
+            # If confidence is low (< 0.65), classify as NEUTRAL
+            if confidence < 0.65:
+                sentiment = 'NEUTRAL'
+            
             return {
-                'sentiment': result['label'],
-                'confidence': round(result['score'], 4)
+                'sentiment': sentiment,
+                'confidence': confidence
             }
         except Exception as e:
             print(f"❌ Sentiment analysis error: {e}")
@@ -54,9 +61,16 @@ class SentimentAnalyzer:
             
             formatted_results = []
             for result in results:
+                sentiment = result['label']
+                confidence = round(result['score'], 4)
+                
+                # Apply neutral detection (same as analyze method)
+                if confidence < 0.65:
+                    sentiment = 'NEUTRAL'
+                
                 formatted_results.append({
-                    'sentiment': result['label'],
-                    'confidence': round(result['score'], 4)
+                    'sentiment': sentiment,
+                    'confidence': confidence
                 })
             
             return formatted_results

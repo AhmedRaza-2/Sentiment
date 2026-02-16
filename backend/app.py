@@ -130,7 +130,7 @@ def analyze_tweets():
     try:
         data = request.json
         query = data.get('query', '')
-        max_tweets = min(data.get('max_tweets', 10), 20)  # REDUCED to 20 max
+        max_tweets = min(data.get('max_tweets', 100), 100)  # Allow up to 100 tweets
         
         if not query:
             return jsonify({"error": "Query is required"}), 400
@@ -193,7 +193,7 @@ def analyze_tweets():
             'progress': 70
         })
         
-        # Step 3: Detect toxicity (only first 5 tweets to save time)
+        # Step 3: Detect toxicity (ALL tweets with fallback detector)
         socketio.emit('analysis_update', {
             'status': 'detecting_toxicity',
             'message': '⚠️  Detecting toxic content...',
@@ -201,17 +201,17 @@ def analyze_tweets():
         })
         
         toxicity_results = []
-        if toxicity_detector and toxicity_detector.api_key:
-            # Only analyze first 5 tweets (API is slow)
-            sample_size = min(5, len(tweets))
-            toxicity_sample = [tweet['text'] for tweet in tweets[:sample_size]]
-            toxicity_results_sample = toxicity_detector.analyze_batch(toxicity_sample)
+        if toxicity_detector:
+            # Analyze ALL tweets using fallback detector (fast keyword-based)
+            all_texts = [tweet['text'] for tweet in tweets]
             
-            # Fill rest with default
-            toxicity_results = toxicity_results_sample + [
-                toxicity_detector._default_response() for _ in range(len(tweets) - sample_size)
-            ]
-            print(f"✅ Toxicity detection complete (analyzed {sample_size} tweets)")
+            # Use fallback detector for all tweets (no API calls, instant)
+            toxicity_results = []
+            for text in all_texts:
+                toxicity_results.append(toxicity_detector._default_response(text))
+            
+            toxic_count = sum(1 for r in toxicity_results if r.get('is_toxic', False))
+            print(f"✅ Toxicity detection complete (analyzed {len(tweets)} tweets, found {toxic_count} toxic)")
         else:
             toxicity_results = [
                 {'toxicity': 0.0, 'is_toxic': False} for _ in tweets
@@ -221,6 +221,47 @@ def analyze_tweets():
             'status': 'toxicity_done',
             'message': '✅ Toxicity detection complete',
             'progress': 90
+        })
+        
+        # Step 4: Extract topics using LDA
+        socketio.emit('analysis_update', {
+            'status': 'extracting_topics',
+            'message': '🔍 Extracting trending topics...',
+            'progress': 95
+        })
+        
+        topics = []
+        try:
+            from modules.analytics import AnalyticsEngine
+            analytics = AnalyticsEngine()
+            
+            # Get cleaned tweet texts
+            tweet_texts = [tweet['text'] for tweet in tweets]
+            
+            # Perform LDA topic modeling
+            lda_topics = analytics.perform_lda(tweet_texts, num_topics=5)
+            
+            # Extract top words from each topic
+            for topic in lda_topics:
+                # Parse topic words (format: "0.123*word1 + 0.456*word2")
+                words_str = topic['words']
+                words = []
+                for item in words_str.split(' + '):
+                    word = item.split('*')[1].strip('"')
+                    words.append(word)
+                topics.extend(words[:3])  # Top 3 words per topic
+            
+            # Remove duplicates and limit to top 10
+            topics = list(dict.fromkeys(topics))[:10]
+            print(f"✅ Topic extraction complete: {topics}")
+        except Exception as e:
+            print(f"⚠️ Topic extraction error: {e}")
+            topics = []
+        
+        socketio.emit('analysis_update', {
+            'status': 'complete',
+            'message': '✅ Analysis complete!',
+            'progress': 100
         })
         
         # Step 4: Combine results
@@ -245,6 +286,7 @@ def analyze_tweets():
                 'clean_count': len(analyzed_tweets) - toxic_count,
                 'toxicity_rate': round((toxic_count / len(analyzed_tweets)) * 100, 2) if analyzed_tweets else 0
             },
+            'topics': topics,  # Add topics to response
             'tweets': analyzed_tweets
         }
         

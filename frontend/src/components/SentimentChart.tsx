@@ -1,41 +1,44 @@
 import React from 'react';
-import { Pie } from 'react-chartjs-2';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 
-ChartJS.register(ArcElement, Tooltip, Legend);
-
-interface ChartProps {
-    stats: {
-        positive: number;
-        negative: number;
-        neutral: number;
-    };
+interface SentimentChartProps {
+    positive: number;
+    negative: number;
+    neutral: number;
 }
 
-const SentimentChart: React.FC<ChartProps> = ({ stats }) => {
-    const data = {
-        labels: ['Positive', 'Negative', 'Neutral'],
-        datasets: [
-            {
-                data: [stats.positive, stats.negative, stats.neutral],
-                backgroundColor: [
-                    'rgba(75, 192, 192, 0.6)',
-                    'rgba(255, 99, 132, 0.6)',
-                    'rgba(201, 203, 207, 0.6)',
-                ],
-                borderColor: [
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(201, 203, 207, 1)',
-                ],
-                borderWidth: 1,
-            },
-        ],
-    };
+const SentimentChart: React.FC<SentimentChartProps> = ({ positive, negative, neutral }) => {
+    const data = [
+        { name: 'Positive', value: positive, color: '#10b981' },
+        { name: 'Negative', value: negative, color: '#ef4444' },
+        { name: 'Neutral', value: neutral, color: '#6b7280' }
+    ].filter(item => item.value > 0); // Only show non-zero values
+
+    const COLORS = data.map(item => item.color);
 
     return (
-        <div className="sentiment-chart-container">
-            <Pie data={data} options={{ responsive: true, maintainAspectRatio: false }} />
+        <div className="chart-container">
+            <h4>📊 Sentiment Distribution</h4>
+            <ResponsiveContainer width="100%" height={300}>
+                <PieChart>
+                    <Pie
+                        data={data}
+                        cx="50%"
+                        cy="50%"
+                        labelLine={false}
+                        label={({ name, percent }) => percent !== undefined ? `${name}: ${(percent * 100).toFixed(0)}%` : name}
+                        outerRadius={80}
+                        fill="#8884d8"
+                        dataKey="value"
+                    >
+                        {data.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                    </Pie>
+                    <Tooltip />
+                    <Legend />
+                </PieChart>
+            </ResponsiveContainer>
         </div>
     );
 };

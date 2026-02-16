@@ -3,6 +3,8 @@ import { signOut } from 'firebase/auth';
 import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import io from 'socket.io-client';
+import SentimentChart from './SentimentChart';
+import TopicsDisplay from './TopicsDisplay';
 import './Dashboard.css';
 
 interface DashboardProps {
@@ -41,11 +43,13 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
   const [error, setError] = useState('');
   const [progress, setProgress] = useState(0);
   const [statusMessage, setStatusMessage] = useState('');
+  const [showAllTweets, setShowAllTweets] = useState(false);
+  const [filter, setFilter] = useState<string>('all');
 
   // Connect to Socket.IO
   useEffect(() => {
     const newSocket = io('http://localhost:5003');
-    
+
     newSocket.on('connect', () => {
       console.log('✅ Connected to Socket.IO');
     });
@@ -93,7 +97,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
 
   const handleAnalyze = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!query.trim()) {
       setError('Please enter a search query');
       return;
@@ -104,6 +108,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
     setResult(null);
     setProgress(0);
     setStatusMessage('Starting analysis...');
+    setShowAllTweets(false);
 
     try {
       const response = await fetch('http://localhost:5003/api/analyze', {
@@ -113,7 +118,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
         },
         body: JSON.stringify({
           query: query,
-          max_tweets: 20,
+          max_tweets: 100,  // Fetch 100 tweets for better analysis
           uid: user?.uid
         })
       });
@@ -125,7 +130,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
 
       const data = await response.json();
       console.log('✅ Analysis started:', data);
-      
+
     } catch (err: any) {
       console.error('❌ Analysis error:', err);
       setError(err.message || 'Failed to analyze tweets');
@@ -149,6 +154,17 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
       default: return '#6b7280';
     }
   };
+
+  // Filter tweets based on selected filter
+  const filteredTweets = result?.tweets?.filter((tweet: TweetData) => {
+    if (filter === 'all') return true;
+    if (filter === 'toxic') return tweet.toxicity?.is_toxic;
+    return tweet.sentiment?.sentiment?.toLowerCase() === filter;
+  }) || [];
+
+  const displayedTweets = showAllTweets
+    ? filteredTweets
+    : filteredTweets.slice(0, 20);
 
   return (
     <div className="dashboard">
@@ -213,7 +229,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
           {result && (
             <div className="results-section">
               <h3>📊 Analysis Results for "{result.query}"</h3>
-              
+
               <div className="results-grid">
                 <div className="result-card positive">
                   <h4>😊 Positive</h4>
@@ -237,9 +253,116 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
                 </div>
               </div>
 
+              {/* Topics Display */}
+              {result.topics && result.topics.length > 0 && (
+                <TopicsDisplay topics={result.topics} />
+              )}
+
+              {/* Sentiment Chart */}
+              {result.sentiment && (
+                <SentimentChart
+                  positive={result.sentiment.positive || 0}
+                  negative={result.sentiment.negative || 0}
+                  neutral={result.sentiment.neutral || 0}
+                />
+              )}
+
+              {/* Filter Controls */}
+              <div className="filter-section" style={{ margin: '1.5rem 0' }}>
+                <h4>🔍 Filter Tweets:</h4>
+                <div className="filter-buttons" style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.5rem' }}>
+                  <button
+                    onClick={() => setFilter('all')}
+                    className={filter === 'all' ? 'filter-btn active' : 'filter-btn'}
+                    style={{
+                      padding: '0.5rem 1rem',
+                      borderRadius: '8px',
+                      border: 'none',
+                      background: filter === 'all' ? '#3b82f6' : '#e5e7eb',
+                      color: filter === 'all' ? 'white' : '#374151',
+                      cursor: 'pointer',
+                      fontWeight: '600'
+                    }}
+                  >
+                    All ({result.tweets?.length || 0})
+                  </button>
+                  <button
+                    onClick={() => setFilter('positive')}
+                    className={filter === 'positive' ? 'filter-btn active' : 'filter-btn'}
+                    style={{
+                      padding: '0.5rem 1rem',
+                      borderRadius: '8px',
+                      border: 'none',
+                      background: filter === 'positive' ? '#10b981' : '#e5e7eb',
+                      color: filter === 'positive' ? 'white' : '#374151',
+                      cursor: 'pointer',
+                      fontWeight: '600'
+                    }}
+                  >
+                    😊 Positive ({result.sentiment?.positive || 0})
+                  </button>
+                  <button
+                    onClick={() => setFilter('negative')}
+                    className={filter === 'negative' ? 'filter-btn active' : 'filter-btn'}
+                    style={{
+                      padding: '0.5rem 1rem',
+                      borderRadius: '8px',
+                      border: 'none',
+                      background: filter === 'negative' ? '#ef4444' : '#e5e7eb',
+                      color: filter === 'negative' ? 'white' : '#374151',
+                      cursor: 'pointer',
+                      fontWeight: '600'
+                    }}
+                  >
+                    😞 Negative ({result.sentiment?.negative || 0})
+                  </button>
+                  <button
+                    onClick={() => setFilter('neutral')}
+                    className={filter === 'neutral' ? 'filter-btn active' : 'filter-btn'}
+                    style={{
+                      padding: '0.5rem 1rem',
+                      borderRadius: '8px',
+                      border: 'none',
+                      background: filter === 'neutral' ? '#6b7280' : '#e5e7eb',
+                      color: filter === 'neutral' ? 'white' : '#374151',
+                      cursor: 'pointer',
+                      fontWeight: '600'
+                    }}
+                  >
+                    😐 Neutral ({result.sentiment?.neutral || 0})
+                  </button>
+                  <button
+                    onClick={() => setFilter('toxic')}
+                    className={filter === 'toxic' ? 'filter-btn active' : 'filter-btn'}
+                    style={{
+                      padding: '0.5rem 1rem',
+                      borderRadius: '8px',
+                      border: 'none',
+                      background: filter === 'toxic' ? '#f59e0b' : '#e5e7eb',
+                      color: filter === 'toxic' ? 'white' : '#374151',
+                      cursor: 'pointer',
+                      fontWeight: '600'
+                    }}
+                  >
+                    ⚠️ Toxic ({result.toxicity?.toxic_count || 0})
+                  </button>
+                </div>
+              </div>
+
               <div className="tweets-list">
-                <h4>📝 Analyzed Tweets ({result.tweets_analyzed})</h4>
-                {result.tweets && result.tweets.slice(0, 10).map((tweet: TweetData) => (
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+                  <h4>📝 Filtered Tweets ({filteredTweets.length})</h4>
+                  {filteredTweets.length > 20 && (
+                    <button
+                      onClick={() => setShowAllTweets(!showAllTweets)}
+                      className="search-button"
+                      style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
+                    >
+                      {showAllTweets ? '📋 Show Less' : `📋 Show All ${filteredTweets.length} Tweets`}
+                    </button>
+                  )}
+                </div>
+                {displayedTweets.map((tweet: TweetData) => (
                   <div key={tweet.id} className="tweet-card">
                     <div className="tweet-header">
                       <div className="tweet-author">
@@ -248,14 +371,14 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
                         <span className="tweet-username">@{tweet.author.username}</span>
                       </div>
                       <div className="tweet-badges">
-                        <span 
+                        <span
                           className="sentiment-badge"
-                          style={{ 
+                          style={{
                             backgroundColor: getSentimentColor(tweet.sentiment?.sentiment || 'NEUTRAL'),
                             color: 'white'
                           }}
                         >
-                          {getSentimentEmoji(tweet.sentiment?.sentiment || 'NEUTRAL')} 
+                          {getSentimentEmoji(tweet.sentiment?.sentiment || 'NEUTRAL')}
                           {tweet.sentiment?.sentiment}
                         </span>
                         {tweet.toxicity?.is_toxic && (
